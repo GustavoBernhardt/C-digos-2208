@@ -1,0 +1,12 @@
+<script>                                                                                                                            // 14- Faça um algoritmo que calcule o IMC(Índice de massa corporal) a fórmula é IMC = Peso / Altura².
+
+    var peso; var altura; var imc;                                                                                                  // Declara as variáveis;
+
+    window.alert("Olá, vamos com algumas informações calcular o ÍNDICE DE MASSA CORPORAL (IMC), tenha em mãos o peso e altura. ");  // Explica o que será feito pro usuário e o que será necessário.
+    altura = window.prompt("Por favor insira a altura. ");                                                                          // Solicita a altura e o peso para calcular o IMC;
+    peso = window.prompt("Agora insira o peso. ")
+
+    imc = peso / altura ** 2;                                                                                                       // Aplicamos a fórmula do IMC;
+    window.alert(`Considerando a altura de ${altura} e o peso de ${peso}, sabemos que o IMC dessa pessoa é ${imc} `)                // Imprimos o resultado para o usuário.
+
+</script>

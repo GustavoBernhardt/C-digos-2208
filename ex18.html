@@ -1,0 +1,12 @@
+<script>                                                                                            // 18 - Dado um inteiro positivo n, verificar se n é primo.
+
+var num;                                                                                            // Declara a variável do número que será solicitado;
+num = Number(window.prompt("Digite um número para verificar se é primo. "));                        // Solicita o número ao usuário;
+                                                                                              
+    if(num % 1 == 0 && num % num == 0 && num % 2 !== 0){                                            // If criado com as condições do número ser divisível por 1, por ele mesmo, e não ser divisível por 2, logo, primo;
+        window.alert(`${num} é primo. `);                                                           // Imprime na tela se é primo ou não.
+    }else{
+        window.alert(`${num} não é primo. `);
+    }
+
+</script>

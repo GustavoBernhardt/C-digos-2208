@@ -1,0 +1,21 @@
+<script>                                                                                        // 17 - Solicite dois números para o usuário, o número de início e o número para o final, 
+                                                                                                // calcule a soma dos números pares deste intervalo.
+
+
+    var soma; var ini; var fim;                                                                 // Declara as var utilizadas.
+    
+    window.alert("Você irá inserir dois números, um de início e um de final, calcularemos a soma dos números pares neste intervalo. ");
+    ini = Number(window.prompt("Insira o número de início. "));                                 // Explica o que será feito e solicita ao usuário o número de início e o de fim.
+    fim = Number(window.prompt(`Insira o número final, deve ser maior que ${ini}. `)); 
+    
+    soma = 0;
+    for (i = ini; i < fim; i++){                                                                // FOR com range do número inicial até o final;
+            if(i%2 == 0){                                                                   
+                soma += i                                                                       // A cada passagem do loop verifica se é par, se sim, soma;
+            }else{
+        }                                                                               
+    }
+
+    window.alert(`A soma dos números pares de ${ini} até ${fim} é ${soma} .`);                  // Imprima a soma dos números pares do intervalo declarado; 
+    
+</script>

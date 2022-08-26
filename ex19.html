@@ -1,0 +1,14 @@
+<script>                                                                        // 19 - Dados três números, imprimi-los em ordem crescente.
+
+var num; var num1; var num2; var num3;                                          // Declara as variáveis;
+
+window.alert("Insira 3 números e colocaremos eles em ordem crescente. ");       // Explica o que será feito e solicita os 3 números que serão utilizados.
+num1 = Number(window.prompt("Insira o primeiro número. "));
+num2 = Number(window.prompt("Insira o segundo número. "));
+num3 = Number(window.prompt("Insira o terceiro número. "));
+
+var num = [num1, num2, num3];                                                   // Array para armazenar os números recebidos.
+num.sort((a, b) => a - b);                                                      // Tendo um array podemos utilizar o método sort para colocar em ordem crescente, nesse caso;
+window.alert(num)                                                               // Imprime o array com números ordenados em ordem crescente.
+
+</script>

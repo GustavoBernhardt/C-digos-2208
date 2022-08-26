@@ -1,0 +1,28 @@
+<script>                                                                                            // 8 - Faça um algoritmo que solicite a idade e altura de 5 pessoas.                                                            
+                                                                                                    // Ao final, exibir qual é a pessoa mais alta, a mais baixa, a mais nova e a mais velha.
+
+    var a1; var a2; var a3; var a4; var a5; var i1; var i2; var i3; var i4; var i5;                 // Declara as variáveis de altura e idade;
+    var amin; var amax; var imin; var imax         
+    
+    a1 = Number(window.prompt("Qual a altura da primeira pessoa? "));                               // Solicita as alturas e idades de cada um;
+    i1 = Number(window.prompt("Qual a idade da primeira pessoa? "));
+    a2 = Number( window.prompt("Qual a altura da segunda pessoa? "));
+    i2 = Number(window.prompt("Qual a idade da segunda pessoa? "));
+    a3 = Number(window.prompt("Qual a altura da terceira pessoa? "));
+    i3 = Number(window.prompt("Qual a idade da terceira pessoa? "));
+    a4 = Number(window.prompt("Qual a altura da quarta pessoa? "));
+    i4 = Number(window.prompt("Qual a idade da quarta pessoa? "));
+    a5 = Number(window.prompt("Qual a altura da quinta pessoa? "));
+    i5 = Number(window.prompt("Qual a idade da quinta pessoa? "));
+
+    var amin = Math.min(a1, a2, a3, a4, a5);                                                        // Define o menor e o maior valor de altura e exibe na tela;
+    var amax = Math.max(a1, a2, a3, a4, a5);
+    Number(window.alert(`A pessoa mais baixa tem ${amin} de altura. `))
+    Number(window.alert(`A pessoa mais alta tem ${amax} de altura.  `))
+
+    var imin = Math.min(i1, i2, i3, i4, i5);                                                        // Define a menor e a maior idade e exibe na tela;
+    var imax = Math.max(i1, i2, i3, i4, i5);    
+    Number(window.alert(`A pessoa mais nova tem ${imin} anos. `))
+    Number(window.alert(`A pessoa mais velha tem ${imax} anos. `))
+
+</script>

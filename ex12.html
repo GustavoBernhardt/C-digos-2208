@@ -1,0 +1,16 @@
+<script>                                                                                                                    // 12 - Faça um algoritmo que calcule a área de um triângulo isósceles (que tem dois lados iguais);
+
+    var lado1; var lado2; var area; var altura;                                                                             // Declara as variáveis;                      
+
+    window.alert("Vamos calcular a área de um triângulo isósceles , ou seja, com dois lados iguais e um diferente. ")       // Explica o método para não ficarem dúvidas ao inserir as informações;
+    var lado1 = window.prompt("Insira o lado do triângulo que é diferente dos outros 2 ")                                   // Solicita o lado diferente;
+    var lado2 = window.prompt("Insira o lado do triângulo que se repete, a medida de um dos dois lados iguais ")            // Solicita a medida de um dos lados iguais;
+
+    altura = (lado2 * Math.sqrt(3)) / 2;                                                                                    // Fórmula para descobrir a altura de um triângulo isóceles;
+
+    area = lado1 * altura;                                                                                                  // Com a altura em mãos conseguimos descobrir a área;
+
+    window.alert(`O triângulo apresentado tem a altura de ${altura} e area total de ${area}. `)                             // Imprime na tela a área solicitada e de brinde a altura;
+                                                                                                                            // Não resumi as casas decimais por ser um problema matemático,
+                                                                                                                            // Podendo ser necessário os números com todos os valores.
+</script>

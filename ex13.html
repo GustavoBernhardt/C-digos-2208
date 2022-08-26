@@ -1,0 +1,13 @@
+<script>                                                                                                                    // 13 - Faça um algoritmo que considerando que o custo do kWh (Quilowatt/hora) de consumo de energia é 
+                                                                                                                            // R$ 0.54, solicitar o total de energia gasto e exibir o valor da conta.
+
+    var total; var vlr;
+
+    window.alert("Vamos calcular o valor da sua conta de energia de acordo com seu consumo. ");                              // Explica pro usuário e solicita o total gasto.
+    total = window.prompt("Qual foi o total de energia gasta que deseja saber o valor? ");
+
+    vlr = total * 0.54;                                                                                                     // Multiplica o total gasto custo do kWh, obtemos o valor da fatura.
+    window.alert(`Sabendo que o consumo foi de ${total}kWh, e o valor do kWh é R$ 0.54, o custo será de ${vlr.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}).replace(',','.')}. `);
+                                                                                                                            // Imprime na tela o consumo e o custo. Não sei se ficou certo, mas tentei
+                                                                                                                            // Converti também para R$ pois estava dando erro. Aproveitei e subtituí ',' por '.' para ficar padrão.
+</script>

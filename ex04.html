@@ -1,0 +1,13 @@
+<script>                                                                                                                    // 4 - Faça um algoritmo que exiba a média de 3 notas obtidas por um aluno; *Deve conter um laço de repetição;
+
+    var soma = 0; var media = 0;                                                                                            // Declarando variável de soma;
+                                                                                                                            // Variável da media;
+    for (var i = 0; i < 3; i++) {                                                                                           // FOR solicitando 3 notas;
+        soma += Number(window.prompt('Insira três notas, para calcular a média delas, uma de cada vez. '));                 // Soma = soma + número;
+
+    }
+
+    media = soma / 3                                                                                                        // Pega as 3 notas declaradas e armazendas na var soma e divide pelo número de notas gerando a média;
+    window.alert(`A média obtida através das notas inseridas é ${media}`)                                                   // Imprime a média na tela;
+    
+</script>
